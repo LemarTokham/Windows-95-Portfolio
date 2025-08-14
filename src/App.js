@@ -78,7 +78,7 @@ function App(){
         >
         <div className="about-header">
             <h2>LEMAR TOKHAM</h2>
-            <p><strong>System Administrator at Life.exe</strong></p>
+            <p>System Administrator at Life.exe</p>
           </div>
           
           <div className="ascii-art">

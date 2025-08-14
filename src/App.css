@@ -1,4 +1,4 @@
-/* App.css - Complete Windows 95 Styles */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +6,15 @@
 }
 
 body {
-  font-family: "MS Sans Serif", Geneva, sans-serif;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: grayscale;
+
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .windows95-container {
@@ -26,7 +32,6 @@ body {
   padding: 20px;
 }
 
-/* Desktop Icons */
 .desktop-icon {
   position: absolute;
   width: 75px;
@@ -53,11 +58,10 @@ body {
 
 .desktop-icon-text {
   color: white;
-  font-size: 11px;
+  font-size: 16px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-/* Windows */
 .window {
   position: absolute;
   background: #c0c0c0;
@@ -74,7 +78,7 @@ body {
   color: white;
   padding: 2px 3px;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,11 +130,10 @@ body {
   background: white;
   border: 2px inset #c0c0c0;
   margin: 3px;
-  font-size: 11px;
-  line-height: 1.4;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-/* Taskbar */
 .taskbar {
   position: fixed;
   bottom: 0;
@@ -143,6 +146,7 @@ body {
   align-items: center;
   padding: 2px;
   gap: 5px;
+
 }
 
 .start-button {
@@ -152,7 +156,7 @@ body {
   border: 2px solid;
   border-color: #ffffff #000000 #000000 #ffffff;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -182,7 +186,7 @@ body {
   background: #c0c0c0;
   border: 2px solid;
   border-color: #808080 #ffffff #ffffff #808080;
-  font-size: 11px;
+  font-size: 16px;
   cursor: pointer;
   max-width: 150px;
   overflow: hidden;
@@ -201,10 +205,9 @@ body {
   margin-right: 10px;
   padding: 5px 10px;
   border: 2px inset #c0c0c0;
-  font-size: 11px;
+  font-size: 16px;
 }
 
-/* Content Styling */
 h2 {
   font-size: 14px;
   margin-bottom: 10px;
@@ -213,10 +216,10 @@ h2 {
 }
 
 h3 {
-  font-size: 12px;
+  font-size: 18px;
   margin-top: 15px;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight:bold
 }
 
 .section {
