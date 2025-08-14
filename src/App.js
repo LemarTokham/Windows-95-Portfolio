@@ -30,7 +30,7 @@ function App(){
     <div className="windows95-container">
       {/* Desktop */}
       <div>
-        <h1 style={{color: 'white', textAlign: 'left', 'marginTop': '50px'}}>Welcome to Windows 95</h1>
+        <h1 style={{color: 'white', textAlign: 'left', 'marginTop': '50px'}}>Welcome to Lemar's Windows 95</h1>
 
         {/* Desktop icons */}
         <DesktopIcon 
