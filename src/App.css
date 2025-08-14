@@ -267,4 +267,55 @@ li {
   margin-bottom: 3px;
 }
 
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .windows95-container {
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .desktop {
+    padding: 10px;
+  }
 
+  .desktop-icon {
+    position: relative !important;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .window {
+    position: fixed !important;
+    top: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    width: auto !important;
+    max-width: none;
+    z-index: 1000 !important;
+  }
+  
+  .window-content {
+    max-height: 70vh; 
+    font-size: 16px;
+  }
+  
+  .window-button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+  
+  .window-titlebar {
+    padding: 10px 5px;
+    font-size: 18px;
+  }
+  
+  .taskbar-windows {
+    display: none;
+  }
+  
+  .taskbar-clock {
+    display: none; 
+  }
+}

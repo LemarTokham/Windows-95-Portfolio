@@ -41,18 +41,19 @@ function App(){
         />
 
         <DesktopIcon 
-        icon="💻"
-        label={'Projects'}
+        icon="💼"
+        label={'Experience'}
         position={{top: '250px', left: '50px'}}
-        onClick={() => openWindow('projects')}
+        onClick={() => openWindow('experience')}
         />
 
         <DesktopIcon 
-        icon="💼"
-        label={'Experience'}
+        icon="💻"
+        label={'Projects'}
         position={{top: '350px', left: '50px'}}
-        onClick={() => openWindow('experience')}
+        onClick={() => openWindow('projects')}
         />
+
 
         <DesktopIcon 
         icon="⚙️"
@@ -87,7 +88,7 @@ function App(){
             &gt; Status: Ready to innovate!
           </div>
 
-          <p>Hello! I'm a Computer Science student at the University of Liverpool, currently on my year in industry as a Software Engineering Intern at JPMorgan Chase & Co.</p>
+          <p>Hello World! I'm a Computer Science student at the University of Liverpool, currently on my year in industry as a Software Engineering Intern at JPMorgan Chase & Co.</p>
           <br/>
           <p>I'm passionate about leveraging technology to solve complex problems and drive innovation. With a focus on AI and Data Science, I love building scalable applications and exploring new technologies.</p>
           <br/>
@@ -95,7 +96,7 @@ function App(){
           <ul>
             <li>📍 Location: Glasgow (Internship) / Liverpool (University)</li>
             <li>🌍 Languages: English (Fluent), French (Native)</li>
-            <li>🏆 Featured in Powerful Media Future Leaders Magazine 2025</li>
+            <li>🏆 Featuring in Powerful Media's Future Leaders Magazine 2025</li>
             <li>🥈 2nd Place - BNY Mellon Hackathon</li>
             <li>🎯 Interests: Basketball, Chess, Hiking, Climbing, Mountain Biking</li>
           </ul>
@@ -139,6 +140,11 @@ function App(){
               <li>Demonstrated proficiency in algorithms and data structures</li>
               <li>Collaborated on OSINT challenges simulating real-world investigations</li>
             </ul>
+
+
+          <div>
+            (More coming...)
+          </div>
           </div>
         </Window>
 
@@ -155,15 +161,12 @@ function App(){
             <p><em>Glasgow | June 2025 - June 2026</em></p>
             <ul>
               <li>Developing scalable web application for Market Risk team using Python/Flask and TypeScript/React</li>
-              <li>Leading component library migration for brand alignment across 5 applications</li>
-              <li>Pioneered frontend testing implementation, achieving 40% code coverage</li>
-              <li>Established new testing standards across the team</li>
             </ul>
           </div>
 
           <div className="section">
             <h3>University of Liverpool - Teaching Assistant</h3>
-            <p><em>September 2024 - Present</em></p>
+            <p><em>September 2024 - May 2025</em></p>
             <ul>
               <li>Teaching AI and algorithmic concepts to 70+ undergraduate students</li>
               <li>Covering search algorithms, intelligent agents, knowledge representation</li>
@@ -173,6 +176,7 @@ function App(){
 
           <div className="section">
             <h3>Liverpool Hyperloop - Head of Software and Electronics</h3>
+            <p><em>September 2024 - June 2025</em></p>
             <ul>
               <li>Leading research on scalable control architectures for Hyperloop systems</li>
               <li>Investigating Arduino and Raspberry Pi solutions for real-time communication</li>
@@ -267,7 +271,7 @@ function App(){
             <h3>Awards & Recognition:</h3>
             <ul>
               <li>🏆 Best Teaching Assistant Finalist - Liverpool CS Awards</li>
-              <li>📖 Featured in Powerful Media Future Leaders Magazine 2025</li>
+              <li>📖 Featuring in Powerful Media's Future Leaders Magazine 2025</li>
               <li>🥈 2nd Place - BNY Mellon Hackathon</li>
             </ul>
           </div>
