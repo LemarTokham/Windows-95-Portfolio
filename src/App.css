@@ -1,38 +1,267 @@
-.App {
+/* App.css - Complete Windows 95 Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.windows95-container {
+  background: #008080;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  user-select: none;
+}
+
+.desktop {
+  height: calc(100vh - 40px);
+  position: relative;
+  padding: 20px;
+}
+
+/* Desktop Icons */
+.desktop-icon {
+  position: absolute;
+  width: 75px;
   text-align: center;
+  cursor: pointer;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.desktop-icon:hover {
+  background: rgba(0, 0, 128, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.desktop-icon-image {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 5px;
+  background: #c0c0c0;
+  border: 2px solid #000;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px;
+}
+
+.desktop-icon-text {
   color: white;
+  font-size: 11px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+/* Windows */
+.window {
+  position: absolute;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  box-shadow: 1px 1px 0 0 #000;
+  min-width: 300px;
+  max-width: 600px;
+  max-height: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.window-titlebar {
+  background: linear-gradient(to right, #000080, #1084d0);
+  color: white;
+  padding: 2px 3px;
+  font-weight: bold;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
 }
+
+.window-titlebar-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.window-titlebar-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.window-titlebar-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.window-button {
+  width: 16px;
+  height: 14px;
+  background: #c0c0c0;
+  border: 1px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.window-button:active {
+  border-color: #000000 #ffffff #ffffff #000000;
+}
+
+.window-content {
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 450px;
+  background: white;
+  border: 2px inset #c0c0c0;
+  margin: 3px;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* Taskbar */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  gap: 5px;
+}
+
+.start-button {
+  height: 30px;
+  padding: 0 5px;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
+  font-weight: bold;
+  font-size: 11px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.start-button:active {
+  border-color: #000000 #ffffff #ffffff #000000;
+}
+
+.start-logo {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #ff0000, #ffff00, #00ff00, #0000ff);
+  display: inline-block;
+}
+
+.taskbar-windows {
+  display: flex;
+  gap: 3px;
+  flex: 1;
+}
+
+.taskbar-window {
+  height: 26px;
+  padding: 0 10px;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
+  font-size: 11px;
+  cursor: pointer;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.taskbar-window.active {
+  background: #ffffff;
+  border-color: #000000 #ffffff #ffffff #000000;
+  font-weight: bold;
+}
+
+.taskbar-clock {
+  margin-left: auto;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 2px inset #c0c0c0;
+  font-size: 11px;
+}
+
+/* Content Styling */
+h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}
+
+h3 {
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+
+.skill-tags {
+  margin-top: 5px;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: #000080;
+  color: white;
+  padding: 2px 5px;
+  margin: 2px;
+  font-size: 10px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ascii-art {
+  font-family: monospace;
+  font-size: 10px;
+  background: #000;
+  color: #0f0;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+a {
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+
