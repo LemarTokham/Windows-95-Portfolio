@@ -107,7 +107,7 @@ function App(){
         isOpen={activeWindows.includes('projects')}
         onClose={() => closeWindow('projects')}
         onFocus={() => focusWondow('projects')}
-        position={{top: '250px', left:'200px'}}
+        position={{top: '250px', left:'210px'}}
         zIndexPos={focusedWindow === 'projects'? 100:10}
 
         >
@@ -161,7 +161,7 @@ function App(){
         isOpen={activeWindows.includes('experience')}
         onClose={() => closeWindow('experience')}
         onFocus={() => focusWondow('experience')}
-        position={{top: '350px', left:'200px'}}
+        position={{top: '230px', left:'430px'}}
         zIndexPos={focusedWindow === 'experience'? 100:10}
         >
        <div className="section">
@@ -198,7 +198,7 @@ function App(){
         isOpen={activeWindows.includes('skills')}
         onClose={() => closeWindow('skills')}
         onFocus={() => focusWondow('skills')}
-        position={{top: '450px', left:'200px'}}
+        position={{top: '150px', left:'350px'}}
         zIndexPos={focusedWindow === 'skills'? 100:10}
         >
         <h2>TECHNICAL SKILLS</h2>
