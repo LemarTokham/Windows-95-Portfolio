@@ -94,11 +94,11 @@ function App(){
           <br/>
           <h3>Quick Stats:</h3>
           <ul>
-            <li>📍 Location: Glasgow (Internship) / Liverpool (University)</li>
-            <li>🌍 Languages: English (Fluent), French (Native)</li>
-            <li>🏆 Featuring in Powerful Media's Future Leaders Magazine 2025</li>
-            <li>🥈 2nd Place - BNY Mellon Hackathon</li>
-            <li>🎯 Interests: Basketball, Chess, Hiking, Climbing, Mountain Biking</li>
+            <li>Location: Glasgow (Internship) / Liverpool (University)</li>
+            <li>Languages: English (Fluent), French (Native)</li>
+            <li>Featuring in Powerful Media's Future Leaders Magazine 2025</li>
+            <li>2nd Place - BNY Mellon Hackathon</li>
+            <li>Interests: Basketball, Chess, Hiking, Climbing, Mountain Biking</li>
           </ul>
         </Window>
 
@@ -113,17 +113,25 @@ function App(){
         >
         <h2>PROJECT PORTFOLIO</h2>
           
-          <div className="section">
-            <h3>🚌 Bus Tracker Dashboard</h3>
-            <ul>
-              <li>Real-time bus tracking for Liverpool using Google Maps API</li>
-              <li>Data integration with GOV.UK Find Open Bus Data</li>
-              <li>Built with Python/Flask backend and TypeScript/React frontend</li>
-            </ul>
-          </div>
+        <div className="section">
+          <h3><a href="https://github.com/LemarTokham/Bus-Tracker-V2" target="_blank">Bus Tracker Dashboard</a></h3>
+          <ul>
+            <li>Real-time bus tracking for Liverpool using Google Maps API</li>
+            <li>Data integration with GOV.UK Find Open Bus Data</li>
+            <li>Built with Python/Flask backend and TypeScript/React frontend</li>
+          </ul>
+        </div>
+
+        <div className="section">
+          <h3><a href="https://github.com/LemarTokham/Context-Buddy/tree/main" target="_blank">Context Buddy - Chrome Extension</a></h3>
+          <ul>
+            <li>Chrome extension that gives smart definitions for highlighted text on any webpage</li>
+            <li>Uses OpenAI API to understand context by looking at surrounding content</li>
+          </ul>
+        </div>
 
           <div className="section">
-            <h3>🎬 Axiom: AI-Powered Video Content Generator</h3>
+            <h3><a href="https://github.com/Axiom-208/Youtube-Clippa" target="_blank">Axiom: AI-Powered Video Content Generator</a></h3>
             <p><em>Team Project (6 members)</em></p>
             <ul>
               <li>Independently built complete video processing pipeline</li>
@@ -134,7 +142,7 @@ function App(){
           </div>
 
           <div className="section">
-            <h3>🏆 BNY Mellon Hackathon - 2nd Place</h3>
+            <h3>BNY Mellon Hackathon - 2nd Place</h3>
             <ul>
               <li>Solved complex coding challenges on HackerRank</li>
               <li>Demonstrated proficiency in algorithms and data structures</li>
@@ -270,9 +278,9 @@ function App(){
           <div className="section">
             <h3>Awards & Recognition:</h3>
             <ul>
-              <li>🏆 Best Teaching Assistant Finalist - Liverpool CS Awards</li>
-              <li>📖 Featuring in Powerful Media's Future Leaders Magazine 2025</li>
-              <li>🥈 2nd Place - BNY Mellon Hackathon</li>
+              <li>Best Teaching Assistant Finalist - Liverpool CS Awards</li>
+              <li>Featuring in Powerful Media's Future Leaders Magazine 2025</li>
+              <li>2nd Place - BNY Mellon Hackathon</li>
             </ul>
           </div>
         </Window>

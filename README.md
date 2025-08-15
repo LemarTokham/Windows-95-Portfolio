@@ -18,6 +18,7 @@ A nostalgic Windows 95-themed portfolio built with React. Finally decided on a t
 - ASCII art terminal animations (doesn't do anything lol)
 
 ## Planned Features
+- Adding actual 95 icons
 - Loading screen just like the OG
 - Migration to typescript
 
