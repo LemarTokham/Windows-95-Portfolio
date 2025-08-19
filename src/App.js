@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import './App.css'
+import Window from "./components/Windows";
+import DesktopIcon from "./components/DesktopIcon";
 
 
 function App(){
   const [activeWindows, setActiveWindows] = useState(['about'])
   const [focusedWindow, setFocusedWindow] = useState(null)
+
 
   const openWindow = (windowName) => {
     // Make sure the same window can't be opened twice
@@ -317,36 +320,8 @@ function App(){
 }
 
 
-function Window({title, isOpen, onClose, position,zIndexPos, onFocus, children}) {
-    if (!isOpen) {
-        return null
-    }
 
-    return (
-        <div className="window" 
-        style={{top: position.top, left: position.left, zIndex: zIndexPos}}
-        onMouseDown={onFocus}
-        >
-            <div className="window-titlebar">
-                <span>{title}</span>
-                <button onClick={onClose}>X</button>
-            </div>
-            <div className="window-content">
-                {children} 
-            </div>
-        </div>
-    )
-}
 
-function DesktopIcon({icon, label, position, onClick}){
-  return (
-    <div className="desktop-icon" 
-        style={{top: position.top, left: position.left}}
-        onClick={onClick}>
-          <div className="desktop-icon-image">{icon}</div>
-          <div className="desktop-icon-text">{label}</div>
-    </div>
-  )
-}
+
 
 export default App
